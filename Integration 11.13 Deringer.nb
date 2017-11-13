@@ -1,0 +1,459 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15467,        451]
+NotebookOptionsPosition[     14180,        400]
+NotebookOutlinePosition[     14528,        415]
+CellTagsIndexPosition[     14485,        412]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Problem 5.1.1a", "Section",
+ CellChangeTimes->{{3.719542139045206*^9, 3.7195421411572556`*^9}, {
+  3.7195866018676205`*^9, 3.719586602445671*^9}},
+ ExpressionUUID -> "708bd39b-523d-4411-9487-7ce76523cfc4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "x_", "]"}], "=", 
+    RowBox[{
+     RowBox[{"x", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", "x"}]]}], "-", "1"}]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Integral]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"x", " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"-", "x"}]]}], "-", "1"}], ")"}], 
+      RowBox[{"\[DifferentialD]", "x"}]}]}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"\[Integral]", 
+       RowBox[{
+        SuperscriptBox["x\[ExponentialE]", 
+         RowBox[{"-", "x"}]], 
+        RowBox[{"\[DifferentialD]", "x"}]}]}], " ", "-", 
+      RowBox[{"\[Integral]", 
+       RowBox[{"1", 
+        RowBox[{"\[DifferentialD]", "x"}], " ", "\[IndentingNewLine]", 
+        "u"}]}]}], "=", 
+     RowBox[{
+      RowBox[{"x", "         ", "v"}], "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"-", "x"}]]}], "\[IndentingNewLine]", "du"}], "=", 
+       RowBox[{
+        RowBox[{"1", "dx", "      ", "dv"}], "=", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"-", "x"}]], "dx"}], "\[IndentingNewLine]", "-", 
+          SuperscriptBox["x\[ExponentialE]", 
+           RowBox[{"-", "x"}]], "-", 
+          RowBox[{"\[Integral]", 
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"-", "x"}]]}], 
+            RowBox[{"\[DifferentialD]", "x"}]}]}]}], "=", " ", 
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox["x\[ExponentialE]", 
+            RowBox[{"-", "x"}]]}], "-", 
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"-", "x"}]], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          "-", 
+          SuperscriptBox["x\[ExponentialE]", 
+           RowBox[{"-", "x"}]], "-", 
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"-", "x"}]], "-", "x"}]}]}]}]}]}]}], "\[IndentingNewLine]",
+    "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"indefInt", "=", 
+   RowBox[{
+    RowBox[{"-", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", "x"}]]}], "-", "x", "-", 
+    RowBox[{"x", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", "x"}]]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"byPart", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"indefInt", "/.", 
+      RowBox[{"x", "\[Rule]", "4"}]}], ")"}], "-", 
+    RowBox[{"(", 
+     RowBox[{"indefInt", "/.", 
+      RowBox[{"x", "\[Rule]", "1"}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Integration by Parts: \>\"", ",", 
+    RowBox[{"N", "[", "byPart", "]"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7195389202630396`*^9, 3.719538962119143*^9}, {
+   3.719540217685364*^9, 3.7195402338147955`*^9}, {3.719540267054653*^9, 
+   3.7195403605983086`*^9}, {3.7195405898790293`*^9, 3.719540689041094*^9}, 
+   3.7195407670127983`*^9, {3.719540967294779*^9, 3.719540975854957*^9}, {
+   3.7195412100368357`*^9, 3.7195413459570913`*^9}, {3.7195413814461317`*^9, 
+   3.7195415177107306`*^9}, {3.719541671367999*^9, 3.7195416901589823`*^9}, {
+   3.7195417531914206`*^9, 3.7195418357825804`*^9}, {3.719541884558317*^9, 
+   3.7195419601517506`*^9}, {3.719542047232236*^9, 3.7195421225824533`*^9}, 
+   3.7195866757939024`*^9},
+ ExpressionUUID -> "d31372ea-0ea1-4a59-ad3e-33f2e6bfa8c7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Integration by Parts: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "2.3558193121007864`"}]}],
+  SequenceForm["Integration by Parts: ", -2.3558193121007864`],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.7195419605831738`*^9, 3.7195420370634747`*^9, {3.719542096077022*^9, 
+   3.7195421232720985`*^9}, {3.7195852760629044`*^9, 3.7195852890170975`*^9}, 
+   3.71958667607509*^9, 3.719587293913813*^9},
+ ExpressionUUID -> "b28ab7a5-d1dc-4553-802c-e3d5ff7ccec4"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 5.1.1b", "Section",
+ CellChangeTimes->{{3.7195421464293084`*^9, 3.719542149094863*^9}, {
+  3.719586605492663*^9, 3.7195866063207183`*^9}},
+ ExpressionUUID -> "665c1ed7-7be2-4fd9-b3b9-410f9d1ad837"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"mathematicaInt", "=", 
+   RowBox[{"N", "[", 
+    RowBox[{"Integrate", "[", 
+     RowBox[{
+      RowBox[{"f", "[", "x", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "1", ",", "4"}], "}"}]}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Mathematica Integrate: \>\"", ",", "mathematicaInt"}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7195421760456934`*^9, 3.719542181597*^9}, {
+  3.7195422195093503`*^9, 3.7195422397897873`*^9}, {3.71958646609761*^9, 
+  3.719586483489171*^9}, {3.7195865159630203`*^9, 3.7195865181939716`*^9}},
+ ExpressionUUID -> "68a456f3-3e4b-43b1-89cc-988f94e56f06"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Mathematica Integrate: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "2.3558193121007864`"}]}],
+  SequenceForm["Mathematica Integrate: ", -2.3558193121007864`],
+  Editable->False]], "Print",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{{3.7195865093291173`*^9, 3.719586518662646*^9}, {
+  3.719587296236534*^9, 3.71958729914282*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "both", " ", "methods", " ", "in", " ", "question", " ", "1", " ", "yield", 
+   " ", "the", " ", "same", " ", "result"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7195422965111265`*^9, 
+  3.719542312055035*^9}},ExpressionUUID->"0964cdfb-d40c-4a92-98ab-\
+a644120d049e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 5.1.2a", "Section",
+ CellChangeTimes->{{3.719542325717142*^9, 3.7195423279492817`*^9}, {
+  3.7195866095707846`*^9, 3.719586610070764*^9}},
+ ExpressionUUID -> "90cbc335-823e-401a-886a-f6d57ce993ef"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[CapitalDelta]x", "=", ".5"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "4"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"trapMethod", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", 
+     RowBox[{"a", "+", "\[CapitalDelta]x"}]}], ",", 
+    RowBox[{"i", "\[LessEqual]", "b"}], ",", 
+    RowBox[{"i", "+=", "\[CapitalDelta]x"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"trapMethod", "+=", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"f", "[", 
+          RowBox[{"i", "-", "\[CapitalDelta]x"}], "]"}], "+", 
+         RowBox[{"f", "[", "i", "]"}]}], ")"}], "*", 
+       RowBox[{"\[CapitalDelta]x", "/", "2"}]}]}], ";"}]}], 
+   "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Trapezoid Method: \>\"", ",", 
+    RowBox[{"N", "[", "trapMethod", "]"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7195661018608932`*^9, 3.7195662084301147`*^9}, {
+   3.719566257638277*^9, 3.719566264151497*^9}, {3.7195665237432785`*^9, 
+   3.7195665719524946`*^9}, {3.719566622455903*^9, 3.719566791706092*^9}, {
+   3.7195864295728736`*^9, 3.7195864401866274`*^9}, 3.719586668443038*^9},
+ ExpressionUUID -> "89b33f5a-f734-4f38-815a-b52148fef769"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trapezoid Method: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "2.3568993256497435`"}]}],
+  SequenceForm["Trapezoid Method: ", -2.3568993256497435`],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.719566775333398*^9, {3.7195852781242037`*^9, 3.7195852960639772`*^9}, 
+   3.7195864406240654`*^9, 3.7195866692710896`*^9, 3.719587310068771*^9},
+ ExpressionUUID -> "7c8e21f2-d91a-4cf2-b4fd-5ce17fa925fe"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "result", " ", "for", " ", "trapeziod", " ", "method", " ", "is", " ", 
+   "less", " ", "than", " ", "the", " ", "actual", " ", "as", " ", 
+   "expected"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7195864213450346`*^9, 3.7195864568108015`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 5.1.2b", "Section",
+ CellChangeTimes->{{3.719585342634261*^9, 3.719585348907937*^9}, {
+  3.7195866128048787`*^9, 3.7195866132110667`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"simpson", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", 
+     RowBox[{"a", "+", "\[CapitalDelta]x"}]}], ",", 
+    RowBox[{"i", "\[LessEqual]", "b"}], ",", 
+    RowBox[{"i", "+=", "\[CapitalDelta]x"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"simpson", "+=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"f", "[", "i", "]"}], "6"], "+", 
+        RowBox[{
+         FractionBox["2", "3"], " ", 
+         RowBox[{"f", "[", 
+          RowBox[{
+           FractionBox["1", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"i", "+", 
+             RowBox[{"(", 
+              RowBox[{"i", "-", "\[CapitalDelta]x"}], ")"}]}], ")"}]}], 
+          "]"}]}], "+", 
+        RowBox[{
+         FractionBox["1", "6"], " ", 
+         RowBox[{"f", "[", 
+          RowBox[{"i", "-", "\[CapitalDelta]x"}], "]"}]}]}], ")"}], "*", 
+      RowBox[{"(", 
+       RowBox[{"i", "-", 
+        RowBox[{"(", 
+         RowBox[{"i", "-", "\[CapitalDelta]x"}], ")"}]}], ")"}]}]}]}], 
+   "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Simpson's Method: \>\"", ",", "simpson"}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7195853657885513`*^9, 3.7195853703565364`*^9}, {
+  3.71958559101144*^9, 3.7195856053920918`*^9}, {3.7195856641916213`*^9, 
+  3.719585700179195*^9}, {3.719586019862935*^9, 3.719586206016492*^9}, {
+  3.719586243721572*^9, 3.719586271480012*^9}, {3.7195863518185368`*^9, 
+  3.719586359271748*^9}, {3.7195866542360544`*^9, 3.719586662585451*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Simpson's Method: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "2.355835444180152`"}]}],
+  SequenceForm["Simpson's Method: ", -2.355835444180152],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.71958619375906*^9, {3.7195862725425196`*^9, 3.719586274511309*^9}, 
+   3.719586360678014*^9, 3.719586663632311*^9, 3.7195873129906645`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Simpson", "'"}], "s", " ", "method", " ", "is", " ", "slightly", 
+    " ", "higher", " ", "than", " ", "the", " ", "actual"}], ",", " ", 
+   RowBox[{
+   "but", " ", "more", " ", "precise", " ", "than", " ", "the", " ", 
+    "trapeziod", " ", "method"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.719586539042181*^9, 3.719586569644869*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 5.2.1", "Section",
+ CellChangeTimes->{{3.719586579224475*^9, 3.719586583165305*^9}, {
+  3.7195866165079837`*^9, 3.71958662471097*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"midpoint", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", 
+     RowBox[{"a", "+", "\[CapitalDelta]x"}]}], ",", 
+    RowBox[{"i", "\[LessEqual]", "b"}], ",", 
+    RowBox[{"i", "+=", "\[CapitalDelta]x"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"midpoint", "+=", 
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"i", "-", 
+         FractionBox["\[CapitalDelta]x", "2"]}], "]"}], " ", 
+       "\[CapitalDelta]x"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Midpoint Method: \>\"", ",", 
+    RowBox[{"N", "[", "midpoint", "]"}]}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7195866972715225`*^9, 3.719586796228406*^9}, {
+  3.7195868636458883`*^9, 3.719586874394287*^9}, {3.719586912528577*^9, 
+  3.719586932331767*^9}, {3.7195869786451817`*^9, 3.719586993761992*^9}, {
+  3.7195870502444353`*^9, 3.7195870506819406`*^9}, {3.7195872104057465`*^9, 
+  3.7195872886874914`*^9}, {3.7195873309666643`*^9, 3.719587368860342*^9}, {
+  3.719587403544998*^9, 3.7195874320845785`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Midpoint Method: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "2.355303503445356`"}]}],
+  SequenceForm["Midpoint Method: ", -2.355303503445356],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.719587424677365*^9, 3.719587437136858*^9}, 
+   3.7195875413973417`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"In", " ", "this", " ", "case"}], ",", " ", 
+   RowBox[{
+   "the", " ", "Midpoint", " ", "Method", " ", "is", " ", "more", " ", 
+    "accurate", " ", "than", " ", "the", " ", "Trapezoid", " ", "Method"}], 
+   ",", " ", 
+   RowBox[{
+   "and", " ", "less", " ", "accurate", " ", "than", " ", "Simpsons", " ", 
+    "Method"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7195874860350876`*^9, 3.7195875378348804`*^9}}]
+}, Open  ]]
+},
+WindowSize->{808, 602},
+WindowMargins->{{Automatic, -37}, {17, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 211, 3, 63, "Section"],
+Cell[CellGroupData[{
+Cell[816, 29, 3760, 101, 307, "Input"],
+Cell[4579, 132, 515, 10, 22, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5143, 148, 211, 3, 63, "Section"],
+Cell[CellGroupData[{
+Cell[5379, 155, 697, 17, 50, "Input"],
+Cell[6079, 174, 404, 9, 22, "Print"]
+}, Open  ]],
+Cell[6498, 186, 310, 7, 30, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6845, 198, 211, 3, 63, "Section"],
+Cell[CellGroupData[{
+Cell[7081, 205, 1455, 35, 183, "Input"],
+Cell[8539, 242, 456, 9, 22, "Print"]
+}, Open  ]],
+Cell[9010, 254, 287, 6, 30, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9334, 265, 152, 2, 63, "Section"],
+Cell[CellGroupData[{
+Cell[9511, 271, 1652, 43, 148, "Input"],
+Cell[11166, 316, 389, 8, 22, "Print"]
+}, Open  ]],
+Cell[11570, 327, 405, 9, 50, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12012, 341, 148, 2, 63, "Section"],
+Cell[CellGroupData[{
+Cell[12185, 347, 1179, 27, 146, "Input"],
+Cell[13367, 376, 317, 7, 22, "Print"]
+}, Open  ]],
+Cell[13699, 386, 465, 11, 50, "Input"]
+}, Open  ]]
+}
+]
+*)
+
